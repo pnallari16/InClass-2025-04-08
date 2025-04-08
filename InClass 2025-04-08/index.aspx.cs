@@ -23,11 +23,18 @@ namespace InClass_2025_04_08
             // Apply 15% sales tax to that total
             // Display the total with tax in our label
             
-            TimeSpan t = calCheckOutDate.SelectedDate - calCheckInDate.SelectedDate;
+            DateTime d1 = calCheckInDate.SelectedDate;
+            DateTime d2 = calCheckOutDate.SelectedDate;
+            TimeSpan difference = d2 - d1;
+            var days = difference.Days;
+
+            int charge = days * 200;
+
+            double total = charge * 1.15;
 
             
 
-            lblResult.Text = "You Clicked!";
+            lblResult.Text = "The total amount for the stay is $" + total.ToString();
         }
     }
 }
