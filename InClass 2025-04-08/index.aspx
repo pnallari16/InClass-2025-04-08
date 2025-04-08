@@ -42,12 +42,13 @@
 
                     </asp:TableCell>
                     <asp:TableCell>
-                        <asp:Button ID="cmdOK" runat="server" Text="OK" />
+                        <asp:Button ID="cmdOK" runat="server" Text="OK" OnClick="cmdOK_Click1" />
                     </asp:TableCell>
                 </asp:TableRow>
 
             </asp:Table>
             <asp:Label ID="lblResult" runat="server" Text=""></asp:Label>
+            
         </div>
     </form>
 </body>
